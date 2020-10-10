@@ -468,8 +468,13 @@ class ClanBattle:
                 nik, health_before, finished+1, '尾余刀' if is_continue else '收尾刀'
             )
         else:
-            msg = '{}对boss造成了{:,}点伤害\n（今日第{}刀，{}）'.format(
-                nik, damage, finished+1, '剩余刀' if is_continue else '完整刀'
+            ddmsg = ""
+            if damage<1000000:
+                ddmsg += "\n弟弟,李在赣神魔?"
+            if damage in [114514,1919810]:
+                ddmsg += "\n好臭的刀"
+            msg = '{}对boss造成了{:,}点伤害{}\n（今日第{}刀，{}）'.format(
+                nik, damage, ddmsg, finished+1, '剩余刀' if is_continue else '完整刀'
             )
         status = BossStatus(
             group.boss_cycle,

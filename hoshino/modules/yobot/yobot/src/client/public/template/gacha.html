@@ -34,6 +34,6 @@
   <div id="result" style="font-size: 36px;">点击图片抽卡</div>
 </body>
 <script>var sourcebase = "{{ url_for('yobot_resource', filename='icon/unit/') }}";</script>
-<script src="https://statics.nonebot.com/assets/gacha.js"></script>
+<script src="{{ url_for('yobot_static', filename='assets/gacha.js') }}"></script>
 
 </html>

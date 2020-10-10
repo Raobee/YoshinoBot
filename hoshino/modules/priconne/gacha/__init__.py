@@ -219,7 +219,7 @@ async def gacha_300(bot, ev: CQEvent):
     await bot.send(ev, '\n'.join(msg), at_sender=True)
     if config.priconne.gacha.ENABLE_SILENCE:
         silence_time = (100 * up + 50 * (up + s3) + 10 * s2 + s1) * 1
-        await silence(ev, silence_time)
+        #await silence(ev, silence_time)
 
 
 @sv.on_prefix('氪金')

@@ -12,7 +12,15 @@ database.json
 *.db-shm
 *.db-wal
 *.sqlite
+
+#log
+.log/
+
+#静态资源，单独放至release供下载
 res/
+
+#HoshinoBot默认配置文件，以初始化配置文件待修改
+__bot__.py
 
 # 非公开的组件
 # hoshino/modules/deepchat/
